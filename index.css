@@ -1,3 +1,7 @@
+.html {
+  scroll-behavior: smooth;
+}
+
 .body {
   background-color: #000;
   color: #fff;
@@ -6,8 +10,95 @@
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  overflow: scroll;
+  box-sizing: border-box;
 }
+
+.body-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: scroll;
+}
+
 .header {
-  padding: 20px;
+  position: relative;
+  padding: 0 1.5rem;
+  border: 1px solid #fff;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+}
+
+.main-content {
+  flex: 1;
+  border: 1px solid #fff;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  padding: 0 1.5rem;
+  border: 1px solid #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5rem;
+}
+
+.get-started-section {
+  border: 1px solid #f1cb6b;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.trending-now-section {
+  border: 1px solid #f1cb6b;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.more-reasons-to-join-section {
+  border: 1px solid #f1cb6b;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.faq-section {
+  border: 1px solid #f1cb6b;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.ready-to-watch-section {
+  border: 1px solid #f1cb6b;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
