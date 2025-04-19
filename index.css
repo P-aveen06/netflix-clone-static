@@ -211,7 +211,7 @@ div {
 
 .main-content {
   flex: 1;
-  padding: 0 1.5rem;
+  padding: 0 9.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -379,12 +379,157 @@ div {
   margin-left: 1rem;
 }
 
+.trending-now-header h2 {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
 .trending-now-section {
-  height: 10rem;
+  width: 100%;
+}
+
+.trending-list {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  padding-top: 1rem;
+  gap: 2rem;
+  transition: scroll-behavior 0.3s ease;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.trending-list::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome/Safari */
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+
+.t-bg-1 {
+  background-image: url(./assets/trending-item-1.jpg);
+}
+
+.t-bg-2 {
+  background-image: url(./assets/t-bg-2.jpg);
+}
+
+.t-bg-3 {
+  background-image: url(./assets/tg-bg-3.jpg);
+}
+
+.t-bg-4 {
+  background-image: url(./assets/t-bg-4.jpg);
+}
+
+.t-bg-5 {
+  background-image: url(./assets/t-bg-5.jpg);
+}
+
+.t-bg-6 {
+  background-image: url(./assets/t-bg-6.jpg);
+}
+
+.t-bg-7 {
+  background-image: url(./assets/t-bg-7.jpg);
+}
+
+.t-bg-8 {
+  background-image: url(./assets/t-bg-8.jpg);
+}
+
+.t-bg-9 {
+  background-image: url(./assets/t-bg-9.jpg);
+}
+
+.t-bg-10 {
+  background-image: url(./assets/t-bg-10.jpg);
+}
+
+.trending-card-img {
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  width: 128px;
+  height: 256px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.trending-card-img-container {
+  cursor: pointer;
+}
+
+.trending-cards {
+  position: relative;
+  /* max-width: 100%; */
+  overflow: hidden;
+}
+
+.trending-card-img-container:hover .trending-card-img {
+  transform: scale(1.05);
+}
+
+.trending-cards-item {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
+  overflow-x: scroll;
+}
+
+.trending-card-img {
+  position: relative;
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.trending-card-num {
+  left: -20px;
+  top: -248px;
+  font-size: 4rem;
+  z-index: 20;
+  line-height: 1;
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-text-stroke: 0.125rem rgb(255, 255, 255);
+  text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.trending-card-img-container:hover .trending-card-num {
+  transform: scale(1.1);
 }
 
 .more-reasons-to-join-section {
