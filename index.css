@@ -1146,3 +1146,13 @@ ul {
   cursor: pointer;
   z-index: 2;
 }
+
+.cursor-example {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: red;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
