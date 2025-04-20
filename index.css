@@ -58,6 +58,7 @@ body {
   position: absolute;
   height: 75rem;
   width: 100%;
+  z-index: -1;
 }
 
 .background-3 {
@@ -69,6 +70,7 @@ body {
   position: absolute;
   height: 75rem;
   width: 100%;
+  z-index: -1;
 }
 
 .header {
@@ -1141,4 +1143,6 @@ ul {
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
   color: rgb(255, 255, 255);
   background-color: rgba(128, 128, 128, 0.4);
+  cursor: pointer;
+  z-index: 2;
 }
