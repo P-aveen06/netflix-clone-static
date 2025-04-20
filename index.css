@@ -905,13 +905,44 @@ input[type="email"]::placeholder {
   margin-bottom: 0.5rem;
 }
 
-.faq-list-item-content,
-.faq-answer {
+.faq-list-item-content {
   height: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
   background: rgba(255, 255, 255, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.04);
   border-radius: 1rem;
+  font-size: 1.125rem;
+}
+
+.faq-answer {
+  height: 0;
+  padding: 0rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 0;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  border-radius: 1rem;
+  margin-top: 0rem;
+}
+
+.faq-answer.expanded {
+  padding: 0rem 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.04);
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+}
+
+#faq-1.expanded {
+  height: 132px;
+}
+
+#faq-2.expanded, #faq-4.expanded, #faq-5.expanded {
+  height: 89px;
+}
+
+#faq-6.expanded {
+  height: 150.5px;
 }
 
 .faq-list-item-button {
