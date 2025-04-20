@@ -182,14 +182,14 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 42.40px;
+  height: 42.4px;
 }
 
 .floating-panel-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 42.40px;
+  height: 42.4px;
   background-color: #0f0f0f;
   border-radius: 2rem;
   color: rgba(255, 255, 255, 0.7);
@@ -425,26 +425,37 @@ h3 {
   display: none; /* Hide scrollbar for Chrome/Safari */
 }
 
-.carousel-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
+.trending-btn-container {
+  /* position: absolute; */
+  height: 100%;
   border: none;
-  padding: 10px;
-  cursor: pointer;
-  font-size: 24px;
-  z-index: 1;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  padding-right: 0.75rem;
+  transition: transform 400ms ease-in-out;
 }
 
-.carousel-btn.left {
-  left: 0;
+.trending-card-btn {
+  transition: opacity 400ms ease-in-out;
+  height: 5rem;
+  width: 1.5rem;
+  border-radius: 16rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: rgb(255, 255, 255);
+  background-color: rgba(128, 128, 128, 0.4);
 }
 
-.carousel-btn.right {
-  right: 0;
+.trending-list-container{
+  mask: linear-gradient(to right, rgba(0,0,0,0.01) 0%, black 6%);
+  flex: 1;
 }
 
 .t-bg-1 {
@@ -503,9 +514,10 @@ h3 {
 }
 
 .trending-cards {
-  position: relative;
-  /* max-width: 100%; */
-  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .trending-card-img-container:hover .trending-card-img {
@@ -854,8 +866,8 @@ h3 {
   margin-bottom: 0.75rem;
 }
 
-.faq-header{
-    width: 100%;
+.faq-header {
+  width: 100%;
 }
 
 .faq-list-item {
@@ -967,21 +979,21 @@ ul {
 
 @media (min-width: 600px) {
   .header-text h2 {
-      font-size: 1.25rem;
-      font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 500;
   }
 }
 
 @media (min-width: 960px) {
   .header-text h2 {
-      font-size: 1.25rem;
-      font-weight: 500;
+    font-size: 1.25rem;
+    font-weight: 500;
   }
 }
 
 @media (min-width: 1280px) {
   .header-text h2 {
-      font-size: 2rem;
-      font-weight: 700;
+    font-size: 2rem;
+    font-weight: 700;
   }
 }
